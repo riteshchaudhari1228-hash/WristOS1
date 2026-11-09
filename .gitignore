@@ -1,0 +1,52 @@
+# ============================================================
+# WristOS — .gitignore
+# ============================================================
+
+# --- Node / Frontend ---
+node_modules/
+dist/
+dist-ssr/
+*.local
+.cache/
+.parcel-cache/
+
+# --- Python / Backend ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+env/
+venv/
+.venv/
+.env
+*.egg-info/
+wristos.db
+*.sqlite3
+*.db
+.pytest_cache/
+htmlcov/
+.coverage
+
+# --- Android ---
+android/.gradle/
+android/build/
+android/app/build/
+*.apk
+*.aab
+*.keystore
+
+# --- IDE / OS ---
+.idea/
+*.suo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Zip artifacts ---
+*.zip
+
+# --- Env / Secrets ---
+.env
+.env.*
+!.env.example
+secrets.json

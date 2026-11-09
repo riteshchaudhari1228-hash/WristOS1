@@ -1,0 +1,9 @@
+{
+  "typescript.tsdk": "frontend/node_modules/typescript/lib",
+  "python.defaultInterpreterPath": "py",
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2
+}

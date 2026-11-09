@@ -1,0 +1,17 @@
+# render.yaml — Render.com deployment config for WristOS backend
+# Place this file at the REPO ROOT (same level as frontend/ and backend/)
+
+services:
+  - type: web
+    name: wristos-backend
+    runtime: python
+    region: singapore          # closest to India
+    plan: free
+    rootDir: backend
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python -m uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: ALLOWED_ORIGINS
+        sync: false            # Set manually in Render dashboard after Vercel deploy
+      - key: COMPANION_SECRET
+        generateValue: true    # Render auto-generates a secure random value

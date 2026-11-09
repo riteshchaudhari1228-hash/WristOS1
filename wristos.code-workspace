@@ -1,0 +1,23 @@
+{
+  "folders": [
+    {
+      "name": "WristOS Full Stack",
+      "path": "."
+    },
+    {
+      "name": "Frontend (React + Vite)",
+      "path": "frontend"
+    },
+    {
+      "name": "Backend (FastAPI)",
+      "path": "backend"
+    },
+    {
+      "name": "Android Companion (Kotlin)",
+      "path": "android"
+    }
+  ],
+  "settings": {
+    "typescript.tsdk": "frontend/node_modules/typescript/lib"
+  }
+}
